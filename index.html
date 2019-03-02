@@ -5,6 +5,34 @@
   <script src = "hesaplamalar.js"></script>
   <script src = "mac_listesi.js"></script>
   <script src = "tablo_falan_guncelle.js"></script>
+	
+<script type="text/javascript">
+    (function () {
+        detectPortrait();
+        $(window).resize(function() {
+            detectPortrait("#mainView");
+        });
+
+
+        function detectPortrait(mainDiv) {
+            if (screen.width < screen.height) {
+                $(mainDiv).addClass("portrait_mode");
+            }
+            else {
+                $(mainDiv).removeClass("portrait_mode");
+            }
+        }
+    })();
+</script>
+<style type="text/css">
+    .portrait_mode {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+</style>
   
 <link rel="stylesheet" type="text/css" href="stil.css">
   
