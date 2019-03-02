@@ -31,8 +31,9 @@ function mac_listesi_olustur(){
 			esas_hafta_deger.innerHTML = haftacik;}
 			
 		
-		let ajans_linki = "https://www.sporx.com/_ajax/kategori_fikstur.php?lig=482ofyysbdbeoxauk19yg7tdt&week=";
-		let regie_takimlar = /_blank">(.*)<\/a><\/span>/g;
+		let ajans_linki = "https://m.sporx.com/_ajax/kategori_fikstur.php?lig=482ofyysbdbeoxauk19yg7tdt&week=";
+		let regie_takimlar_ev = /text-right\\">(.*?)<\/td>/g;
+		let regie_takimlar_dep = /text-left\\">(.*?)<\/td>/g;
 		let regie_skorlar = />(.{3,5})<\/span>/g;	
 			
 		
@@ -41,16 +42,18 @@ function mac_listesi_olustur(){
 			b_maclar[s_week] = [];
 				
 			let eslesmeler;
-			let takimciklar = [];
+			let takimciklar_ev = [];
+			let takimciklar_dep = [];
 			let skorcuklar = [];
 			$.get(ajans_linki+s_week, function(response){
-				while(eslesmeler = regie_takimlar.exec(response)){takimciklar.push(eslesmeler[1]);}
+				while(eslesmeler = regie_takimlar_ev.exec(response)){takimciklar_ev.push(eslesmeler[1]);}
+				while(eslesmeler = regie_takimlar_dep.exec(response)){takimciklar_dep.push(eslesmeler[1]);}
 				while(eslesmeler = regie_skorlar.exec(response)){skorcuklar.push(eslesmeler[1]);}
 					
 				for(let ii=0; ii<9; ii++){
 						
-					let ev = takimciklar[ii*2];
-					let dep = takimciklar[ii*2 +1];
+					let ev = takimciklar_ev[ii];
+					let dep = takimciklar_dep[ii];
 						
 					if(skorcuklar[ii].includes(":")){
 						let mac_objem = {"ev":ev, "dep":dep};
