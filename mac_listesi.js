@@ -32,8 +32,8 @@ function mac_listesi_olustur(){
 			
 		
 		let ajans_linki = "https://m.sporx.com/_ajax/kategori_fikstur.php?lig=482ofyysbdbeoxauk19yg7tdt&week=";
-		let regie_takimlar_ev = /text-right\\">(.*?)<\/td>/g;
-		let regie_takimlar_dep = /text-left\\">(.*?)<\/td>/g;
+		let regie_takimlar_ev = /text-right\">(.*?)<\/td>/g;
+		let regie_takimlar_dep = /text-left\">(.*?)<\/td>/g;
 		let regie_skorlar = /<span>(.{3,5})<\/span>/g;	
 			
 		
