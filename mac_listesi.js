@@ -46,15 +46,15 @@ function mac_listesi_olustur(){
 			let takimciklar_dep = [];
 			let skorcuklar = [];
 			$.get(ajans_linki+s_week, function(response){
-				if(s_week == 20){console.log(response["html"]["body"])}
-				while(eslesmeler = regie_takimlar_ev.exec(response["html"]["body"])){takimciklar_ev.push(eslesmeler[1]);}
-				while(eslesmeler = regie_takimlar_dep.exec(response["html"]["body"])){takimciklar_dep.push(eslesmeler[1]);}
+				while(eslesmeler = regie_takimlar_ev.exec(response["html"]["body"])){takimciklar_ev.push(eslesmeler[1]);console.log(eslesmeler[1]);}
+				while(eslesmeler = regie_takimlar_dep.exec(response["html"]["body"])){takimciklar_dep.push(eslesmeler[1])}
 				while(eslesmeler = regie_skorlar.exec(response["html"]["body"])){skorcuklar.push(eslesmeler[1])}
 					
 				for(let ii=0; ii<9; ii++){
 						
 					let ev = takimciklar_ev[ii];
 					let dep = takimciklar_dep[ii];
+					console.log(ev,dep)
 						
 					if(skorcuklar[ii].includes(":")){
 						let mac_objem = {"ev":ev, "dep":dep};
