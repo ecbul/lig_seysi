@@ -54,7 +54,6 @@ function mac_listesi_olustur(){
 						
 					let ev = takimciklar_ev[ii];
 					let dep = takimciklar_dep[ii];
-					console.log(ev,dep)
 						
 					if(skorcuklar[ii].includes(":")){
 						let mac_objem = {"ev":ev, "dep":dep};
