@@ -48,7 +48,7 @@ function mac_listesi_olustur(){
 			$.get(ajans_linki+s_week, function(response){
 				while(eslesmeler = regie_takimlar_ev.exec(response)){takimciklar_ev.push(eslesmeler[1]);}
 				while(eslesmeler = regie_takimlar_dep.exec(response)){takimciklar_dep.push(eslesmeler[1]);}
-				while(eslesmeler = regie_skorlar.exec(response)){skorcuklar.push(eslesmeler[1]);console.log(eslesmeler[1];)}
+				while(eslesmeler = regie_skorlar.exec(response)){skorcuklar.push(eslesmeler[1]);console.log(eslesmeler[1]);}
 					
 				for(let ii=0; ii<9; ii++){
 						
