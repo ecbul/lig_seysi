@@ -5,6 +5,7 @@
 	<script>
 	if ("orientation" in screen) {
 		alert(screen.orientation.type);
+		screen.mozLockOrientation.lock("landscape-primary");
  		screen.orientation.lock("landscape-primary");
 		alert(screen.orientation.type);
 	}
