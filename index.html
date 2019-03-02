@@ -5,7 +5,6 @@
 	<script>
 	if ("orientation" in screen) {
 		alert(screen.orientation.type);
-		document.documentElement.requestFullScreen();
  		screen.orientation.lock("landscape-primary");
 		alert(screen.orientation.type);
 	}
