@@ -27,7 +27,7 @@ tr:nth-child(even) {
 	text-align: left;
 }
 .ev{
-	width: 36%;
+	width: 39%;
 	text-align:right;
 }
 .ev:hover{
@@ -35,7 +35,7 @@ tr:nth-child(even) {
 }
 
 .dep{
-	width: 36%;
+	width: 39%;
 	text-align: left;
 }
 .dep:hover{
@@ -60,7 +60,7 @@ tr:nth-child(even) {
 button {
 	font-size: 20;
 	color: blue;
-    border: none;
-    background-color: transparent;
-    outline: none;
+    	border: none;
+    	background-color: transparent;
+    	outline: none;
 }
