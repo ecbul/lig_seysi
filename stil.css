@@ -12,12 +12,12 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 48%;
-  margin: 1%;
+  /*margin: 1%;*/
 }
 
 td, th {
-	text-align: left;
-	padding: 1%;
+	text-align: center;
+	/*padding: 1%;*/
 }
 
 tr:nth-child(even) {
