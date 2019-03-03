@@ -24,7 +24,7 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 .takim{
-	align: left;
+	text-align: left;
 }
 .ev{
 	width: 36%;
