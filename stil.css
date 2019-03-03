@@ -11,7 +11,7 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 48%;
+  width: 50%;
   /*margin: 1%;*/
 }
 
@@ -23,7 +23,9 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-
+.takim{
+	align: left;
+}
 .ev{
 	width: 36%;
 	text-align:right;
