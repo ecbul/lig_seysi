@@ -18,11 +18,11 @@
 	td, th {
 		text-align: center;
 		font-size: 80%;
-		/*padding: 1%;*/
+		padding: 1%;
 	}
 
 	tr:nth-child(even) {	background-color: #dddddd;	}
-	.ttt{	width: 50%;	}
+	.ttt{	width: 32%;	}
 	.takim{		text-align: left;	}
 	.ev{	width: 39%;	text-align:right;	}
 	.ev:hover{	cursor:pointer;		}
