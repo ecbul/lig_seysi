@@ -57,3 +57,11 @@
 	.bosl{	text-align:left;	width: 7%;	}
 	.bosr{	text-align:right;	width: 7%;	}
 }
+
+button {
+	font-size: 150%;
+	color: blue;
+    	border: none;
+    	background-color: transparent;
+    	outline: none;
+}
